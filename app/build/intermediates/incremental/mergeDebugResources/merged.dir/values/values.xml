@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="ic_launcher_background">#26A69A</color>
-    <string name="app_name">Demo_Android</string>
+    <string name="app_name">Health Diary</string>
     <string name="count">Count:   </string>
     <string name="decrement">Decrement</string>
     <string name="exit">Exit</string>

@@ -9,7 +9,11 @@ import android.widget.Button;
 import android.widget.TextView;
 import java.util.Locale;
 
-import ca.yorku.eecs.mack.demoandroid.R;
+/*
+testing git changes
+ */
+
+import ca.yorku.eecs.mack.healthappdemo.R;
 
 public class HealthAppDemo extends Activity implements OnClickListener {
     private final static String MYDEBUG = "MYDEBUG"; // for Log.i messages
