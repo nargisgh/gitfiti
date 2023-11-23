@@ -17,12 +17,14 @@ public class DailyDiary_Radio extends Activity {
     private final static String MYDEBUG = "MYDEBUG"; // for Log.i messages
     private long startTimeRBtn; // to store the start time
     private long elapsedTime; // to store elapsed time
+    private int clickCount = 0;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dailydiary_radio_btn);
         Log.i(MYDEBUG, "Radio.");
+        // TODO
         //get the day of the week from home screen and set textview with it
         //get the trial count and use that to save the results of time spent
         //check if selected
@@ -46,6 +48,7 @@ public class DailyDiary_Radio extends Activity {
             new RadioGroup.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(RadioGroup group, int checkedId) {
+                    clickCount++;
                     // Check if at least one option is selected in each group
                     boolean isGroup1Selected = energy.getCheckedRadioButtonId() != View.NO_ID;
                     boolean isGroup2Selected = sleep.getCheckedRadioButtonId() != View.NO_ID;
@@ -66,6 +69,7 @@ public class DailyDiary_Radio extends Activity {
         elapsedTime = (endTime - startTimeRBtn)/1000;
         Bundle b = new Bundle();
         b.putLong("trialTimeR", elapsedTime);
+        // TODO update the activity
         Intent intent = new Intent(this, DailyDiary_Slider.class);
             startActivity(intent);
     }

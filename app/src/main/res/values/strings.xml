@@ -55,4 +55,14 @@
     <string name="no">No</string>
     <string name="_3_meals_a_day">3 Meals a Day</string>
     <string name="inconsistent_eating_habits">Inconsistent Eating Habits</string>
+    <string name="results">Results</string>
+    <string name="spinner_list">Spinner List</string>
+    <string name="clicks">Clicks:</string>
+    <string name="time">Time:</string>
+    <string name="home">Home</string>
+    <string name="day_of_the_week_1_5">Day of the Week 1/5</string>
+    <string name="day_of_the_week_2_5">Day of the Week 2/5</string>
+    <string name="day_of_the_week_3_5">Day of the Week 3/5</string>
+    <string name="day_of_the_week_5_5">Day of the Week 5/5</string>
+    <string name="day_of_the_week_4_5">Day of the Week 4/5</string>
 </resources>

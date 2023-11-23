@@ -1,12 +1,12 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:2:1-43:12
+ADDED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:2:1-41:12
 	package
 		ADDED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:2:11-53
 		INJECTED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml
@@ -22,7 +22,7 @@ INJECTED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/Android
 		INJECTED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:9:5-41:19
+ADDED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:9:5-39:19
 	android:label
 		ADDED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:13:9-41
 	android:icon
@@ -52,17 +52,13 @@ ADDED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidMan
 	android:name
 		ADDED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:20:27-74
 activity#ca.yorku.eecs.mack.healthappdemo.DailyDiary_Radio
-ADDED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:23:9-31:20
-	android:label
-		ADDED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:25:13-45
+ADDED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:23:9-30:20
 	android:name
 		ADDED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:24:13-45
 activity#ca.yorku.eecs.mack.healthappdemo.DailyDiary_Slider
-ADDED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:32:9-40:20
-	android:label
-		ADDED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:34:13-45
+ADDED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:31:9-38:20
 	android:name
-		ADDED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:33:13-46
+		ADDED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml:32:13-46
 uses-sdk
 INJECTED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/nargisghiasi/4443/Demo_Android_Project/app/src/main/AndroidManifest.xml

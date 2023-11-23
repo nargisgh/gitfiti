@@ -14,10 +14,12 @@ public class DailyDiary_Slider extends Activity {
     private Button nextBtn;
     private long startTimeSBtn; // to store the start time
     private long elapsedTime; // to store elapsed time
+    private int clickCount = 0;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dailydiary_slide_btn);
+        // TODO
         //get the day of the week from home screen and set textview with it
         //get the trial count and use that to save the results of time spent
         //check if selected
@@ -43,6 +45,7 @@ public class DailyDiary_Slider extends Activity {
                 @Override
                 public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                     // Check if at least one SeekBar is not at position zero
+                    clickCount++;
                     boolean isAnySeekBarNotAtZero = water.getProgress() > 0 && screenTime.getProgress() > 0
                             && sleep.getProgress() > 0 && energy.getProgress() > 0 && mindfulness.getProgress() > 0;
                     // Enable the "Next" button if SeekBar is not at position zero
@@ -63,6 +66,7 @@ public class DailyDiary_Slider extends Activity {
         elapsedTime = (endTime - startTimeSBtn)/1000;
         Bundle b = new Bundle();
         b.putLong("trialTime", elapsedTime);
+        // TODO update to the correct activity
         Intent intent = new Intent(this, HealthAppDemo.class);
         startActivity(intent);
     }
