@@ -65,4 +65,23 @@
     <string name="day_of_the_week_3_5">Day of the Week 3/5</string>
     <string name="day_of_the_week_5_5">Day of the Week 5/5</string>
     <string name="day_of_the_week_4_5">Day of the Week 4/5</string>
+
+    <string name="home_welcome">Welcome to Health Diary!</string>
+    <string name="home_message">Please use the following buttons to add new health diary entries.</string>
+
+    <string name="add_medication">Add Medication</string>
+    <string name="add_food">Add Food</string>
+    <string name="add_exercise">Add Exercise</string>
+
+    <string name="app_title">Health Diary</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="create_account">Create Account</string>
+    <string name="daily_diary">Daily Diary</string>
+    <string name="wellness_goals">Wellness Goals\n</string>
+    <string name="my_account">My Account</string>
+    <string name="today_s_date">Today\'s Date</string>
+    <string name="today_goal">Today\' Goal</string>
+    <string name="hello">Hello</string>
+    <string name="everyone">Everyone!</string>
 </resources>

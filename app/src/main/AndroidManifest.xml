@@ -7,10 +7,12 @@
     <!-- NOTE: minSdkVersion and targetSdkVersion specified in build.gradle -->
 
     <application
-        android:theme="@android:style/Theme.Holo"
-        android:allowBackup="false"
+        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name">
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
         <activity
             android:name="ca.yorku.eecs.mack.healthappdemo.HealthAppDemo"
             android:label="@string/app_name">

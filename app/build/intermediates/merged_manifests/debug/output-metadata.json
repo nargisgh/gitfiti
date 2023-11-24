@@ -4,7 +4,7 @@
     "type": "MERGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "ca.yorku.eecs.mack.healthappdemo",
+  "applicationId": "com.example.healthdiary",
   "variantName": "debug",
   "elements": [
     {
