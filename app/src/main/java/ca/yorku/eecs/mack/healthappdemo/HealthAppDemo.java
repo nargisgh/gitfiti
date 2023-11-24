@@ -1,6 +1,9 @@
 package ca.yorku.eecs.mack.healthappdemo;// MainActivity.java
 
+import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import java.text.SimpleDateFormat;
@@ -11,18 +14,14 @@ import java.util.Locale;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
-import java.util.List;
-
-
 
 public class HealthAppDemo extends AppCompatActivity {
-
+    public static final String PREFS = "MyPrefsFile"; // File to store the counter
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         // Get the TextView reference
         TextView todayDateTextView = findViewById(R.id.todayDateTextView);
 
@@ -53,5 +52,9 @@ public class HealthAppDemo extends AppCompatActivity {
     private String getCurrentDate() {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
         return dateFormat.format(new Date());
+    }
+    public void onDailyDiaryButtonClick(View view){
+        Intent intent = new Intent(this, DailyDiary_Radio.class);
+        startActivity(intent);
     }
 }

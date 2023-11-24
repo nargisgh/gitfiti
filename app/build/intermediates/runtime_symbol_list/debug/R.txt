@@ -2552,6 +2552,7 @@ int string dinner 0x7f0e0045
 int string energetic 0x7f0e0046
 int string energy_level 0x7f0e0047
 int string error_icon_content_description 0x7f0e0048
+int string everyone 0x7f0e00b7
 int string exhausted 0x7f0e0049
 int string exit 0x7f0e004a
 int string exposed_dropdown_menu_content_description 0x7f0e004b
@@ -2559,6 +2560,7 @@ int string fab_transformation_scrim_behavior 0x7f0e004c
 int string fab_transformation_sheet_behavior 0x7f0e004d
 int string fully_energized 0x7f0e004e
 int string gym_workout 0x7f0e004f
+int string hello 0x7f0e00b8
 int string hide_bottom_view_on_scroll_behavior 0x7f0e0050
 int string home 0x7f0e0051
 int string home_message 0x7f0e0052
@@ -2655,6 +2657,8 @@ int string status_bar_notification_info_overflow 0x7f0e00ac
 int string stress_levels_throughout_the_day 0x7f0e00ad
 int string time 0x7f0e00ae
 int string tired 0x7f0e00af
+int string today_goal 0x7f0e00b9
+int string today_s_date 0x7f0e00ba
 int string trial 0x7f0e00b0
 int string type_of_exercise 0x7f0e00b1
 int string walking 0x7f0e00b2

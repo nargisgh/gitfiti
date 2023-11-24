@@ -78,6 +78,7 @@
             android:id="@+id/questionTextViewW"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
             android:text="@string/water_intake"
             android:textSize="18sp" />
 
@@ -134,6 +135,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:paddingLeft="16dp"
             android:text="@string/screen_time"
             android:textSize="18sp" />
 
@@ -192,6 +194,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/hours_of_sleep"
+            android:paddingLeft="16dp"
             android:textSize="18sp" />
 
         <SeekBar
@@ -249,6 +252,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/energy_level"
+            android:paddingLeft="16dp"
             android:textSize="18sp" />
 
         <SeekBar
@@ -312,6 +316,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:paddingLeft="16dp"
             android:text="@string/mindfulness_or_meditation"
             android:textSize="18sp" />
 

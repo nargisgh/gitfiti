@@ -1,13 +1,17 @@
 package ca.yorku.eecs.mack.healthappdemo;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import java.text.DecimalFormat;
 
 
 public class DailyDiary_Radio extends Activity {
@@ -16,15 +20,22 @@ public class DailyDiary_Radio extends Activity {
     Button nextBtn;
     private final static String MYDEBUG = "MYDEBUG"; // for Log.i messages
     private long startTimeRBtn; // to store the start time
-    private long elapsedTime; // to store elapsed time
+    private double elapsedTime; // to store elapsed time
     private int clickCount = 0;
-
+    int counter;
+    private static final String PREFS_NAME = "RadioButton";
+    private static final String TIME_KEY = "time";
+    private static final String CLICK_COUNT_KEY = "click_count";
+    private DecimalFormat df = new DecimalFormat("#.##");
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dailydiary_radio_btn);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         Log.i(MYDEBUG, "Radio.");
-        // TODO
+        counter = getCounter();
+        dayOfWeek = findViewById(R.id.paramLabelOrder);
+        dayOfWeek.setText(String.format("%d/5", counter));
         //get the day of the week from home screen and set textview with it
         //get the trial count and use that to save the results of time spent
         //check if selected
@@ -43,6 +54,10 @@ public class DailyDiary_Radio extends Activity {
         meals.setOnCheckedChangeListener(radioGroupChangeListener);
     }
 
+    private int getCounter() {
+        SharedPreferences prefs = getSharedPreferences(HealthAppDemo.PREFS, Context.MODE_PRIVATE);
+        return prefs.getInt("counter", 1); // 1 is the default value
+    }
     // Listener for RadioGroups
     private final RadioGroup.OnCheckedChangeListener radioGroupChangeListener =
             new RadioGroup.OnCheckedChangeListener() {
@@ -64,13 +79,23 @@ public class DailyDiary_Radio extends Activity {
 
     // Listener for the "Next" button click
     public void onNextButtonClick(View view) {
+        saveData();
+        Bundle b = new Bundle();
+        b.putInt("count", counter);
+        Intent intent = new Intent(this, DailyDiary_Slider.class);
+        intent.putExtras(b);
+        startActivity(intent);
+    }
+
+    private void saveData(){
         long endTime = System.currentTimeMillis();
         // Calculate the elapsed time
-        elapsedTime = (endTime - startTimeRBtn)/1000;
-        Bundle b = new Bundle();
-        b.putLong("trialTimeR", elapsedTime);
-        // TODO update the activity
-        Intent intent = new Intent(this, DailyDiary_Slider.class);
-            startActivity(intent);
+        elapsedTime = (endTime - startTimeRBtn)/1000.0;
+        String time = df.format(elapsedTime);
+        SharedPreferences.Editor editor = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE).edit();
+        editor.putString(TIME_KEY+counter, time);
+        editor.apply();
+        editor.putInt(CLICK_COUNT_KEY+counter, clickCount);
+        editor.apply();
     }
 }

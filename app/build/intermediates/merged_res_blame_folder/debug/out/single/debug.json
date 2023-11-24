@@ -72,6 +72,10 @@
         "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/mipmap-mdpi/ic_launcher.png"
     },
     {
+        "merged": "ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/layout_results.xml.flat",
+        "source": "ca.yorku.eecs.mack.healthappdemo.app-main-22:/layout/results.xml"
+    },
+    {
         "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_ic_excercise_tip.png.flat",
         "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable/ic_excercise_tip.png"
     },
@@ -134,10 +138,6 @@
     {
         "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_ic_instagram.png.flat",
         "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable/ic_instagram.png"
-    },
-    {
-        "merged": "ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/layout_dailydiary_radio_btn.xml.flat",
-        "source": "ca.yorku.eecs.mack.healthappdemo.app-main-22:/layout/dailydiary_radio_btn.xml"
     },
     {
         "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_white_backgound.xml.flat",
