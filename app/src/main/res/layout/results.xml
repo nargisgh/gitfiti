@@ -61,12 +61,14 @@
                         android:gravity="left"
                         android:paddingRight="5dp"
                         android:text="@string/input_type"
+                        android:background="#677AE6"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
                     <TextView
                         android:layout_width="154dp"
                         android:gravity="center"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/radio_button"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -109,6 +111,7 @@
                     <TextView
                         android:gravity="left"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/input_type"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -116,6 +119,7 @@
                         android:layout_width="154dp"
                         android:gravity="center"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/slider"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
                 </TableRow>
@@ -157,6 +161,7 @@
                     <TextView
                         android:gravity="left"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/input_type"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -164,6 +169,7 @@
                         android:layout_width="154dp"
                         android:gravity="center"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/spinner_list"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
                 </TableRow>
@@ -221,6 +227,7 @@
                     <TextView
                         android:gravity="left"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/input_type"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -228,6 +235,7 @@
                         android:layout_width="154dp"
                         android:gravity="center"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/radio_button"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -270,6 +278,7 @@
                     <TextView
                         android:gravity="left"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/input_type"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -277,6 +286,7 @@
                         android:layout_width="154dp"
                         android:gravity="center"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/slider"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
                 </TableRow>
@@ -318,6 +328,7 @@
                     <TextView
                         android:gravity="left"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/input_type"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -325,6 +336,7 @@
                         android:layout_width="154dp"
                         android:gravity="center"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/spinner_list"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
                 </TableRow>
@@ -382,6 +394,7 @@
                     <TextView
                         android:gravity="left"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/input_type"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -389,6 +402,7 @@
                         android:layout_width="154dp"
                         android:gravity="center"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/radio_button"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -431,6 +445,7 @@
                     <TextView
                         android:gravity="left"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/input_type"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -438,6 +453,7 @@
                         android:layout_width="154dp"
                         android:gravity="center"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/slider"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
                 </TableRow>
@@ -479,6 +495,7 @@
                     <TextView
                         android:gravity="left"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/input_type"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -486,6 +503,7 @@
                         android:layout_width="154dp"
                         android:gravity="center"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/spinner_list"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
                 </TableRow>
@@ -543,6 +561,7 @@
                     <TextView
                         android:gravity="left"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/input_type"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -550,6 +569,7 @@
                         android:layout_width="154dp"
                         android:gravity="center"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/radio_button"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -592,6 +612,7 @@
                     <TextView
                         android:gravity="left"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/input_type"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -599,6 +620,7 @@
                         android:layout_width="154dp"
                         android:gravity="center"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/slider"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
                 </TableRow>
@@ -640,6 +662,7 @@
                     <TextView
                         android:gravity="left"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/input_type"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -647,6 +670,7 @@
                         android:layout_width="154dp"
                         android:gravity="center"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/spinner_list"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
                 </TableRow>
@@ -704,6 +728,7 @@
                     <TextView
                         android:gravity="left"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/input_type"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -711,6 +736,7 @@
                         android:layout_width="154dp"
                         android:gravity="center"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/radio_button"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -753,6 +779,7 @@
                     <TextView
                         android:gravity="left"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/input_type"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -760,6 +787,7 @@
                         android:layout_width="154dp"
                         android:gravity="center"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/slider"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
                 </TableRow>
@@ -801,6 +829,7 @@
                     <TextView
                         android:gravity="left"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/input_type"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -808,6 +837,7 @@
                         android:layout_width="154dp"
                         android:gravity="center"
                         android:paddingRight="5dp"
+                        android:background="#677AE6"
                         android:text="@string/spinner_list"
                         android:textAppearance="?android:attr/textAppearanceMedium" />
                 </TableRow>
