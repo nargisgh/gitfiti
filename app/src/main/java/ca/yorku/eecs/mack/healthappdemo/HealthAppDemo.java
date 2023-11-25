@@ -1,7 +1,11 @@
 package ca.yorku.eecs.mack.healthappdemo;// MainActivity.java
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
+import android.media.AudioManager;
+import android.media.ToneGenerator;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -17,6 +21,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class HealthAppDemo extends AppCompatActivity {
     public static final String PREFS = "MyPrefsFile"; // File to store the counter
+    private ToneGenerator toneGenerator = new ToneGenerator(AudioManager.STREAM_ALARM, ToneGenerator.MAX_VOLUME);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +59,12 @@ public class HealthAppDemo extends AppCompatActivity {
         return dateFormat.format(new Date());
     }
     public void onDailyDiaryButtonClick(View view){
+        /*SharedPreferences prefs = getSharedPreferences(PREFS, Context.MODE_PRIVATE);
+        int counter = prefs.getInt("counter", 1);
+        if (counter > 5){
+            //show normal questionnaire, no more trials
+        }*/
+        toneGenerator.startTone(ToneGenerator.TONE_PROP_BEEP);
         Intent intent = new Intent(this, DailyDiary_Radio.class);
         startActivity(intent);
     }

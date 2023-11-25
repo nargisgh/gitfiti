@@ -72,8 +72,8 @@
         "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/layout_results.xml.flat",
-        "source": "ca.yorku.eecs.mack.healthappdemo.app-main-22:/layout/results.xml"
+        "merged": "ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/layout_main.xml.flat",
+        "source": "ca.yorku.eecs.mack.healthappdemo.app-main-22:/layout/main.xml"
     },
     {
         "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_ic_excercise_tip.png.flat",
@@ -140,16 +140,12 @@
         "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable/ic_instagram.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_white_backgound.xml.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable/white_backgound.xml"
-    },
-    {
         "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/layout_results.xml.flat",
         "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/layout/results.xml"
     },
     {
-        "merged": "ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/layout_dailydiary_slide_btn.xml.flat",
-        "source": "ca.yorku.eecs.mack.healthappdemo.app-main-22:/layout/dailydiary_slide_btn.xml"
+        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_white_backgound.xml.flat",
+        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable/white_backgound.xml"
     },
     {
         "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_ic_menu_light.xml.flat",

@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
+import android.media.AudioManager;
+import android.media.ToneGenerator;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -27,6 +29,7 @@ public class DailyDiary_Radio extends Activity {
     private static final String TIME_KEY = "time";
     private static final String CLICK_COUNT_KEY = "click_count";
     private DecimalFormat df = new DecimalFormat("#.##");
+    private ToneGenerator toneGenerator = new ToneGenerator(AudioManager.STREAM_ALARM, ToneGenerator.MAX_VOLUME);
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,6 +66,7 @@ public class DailyDiary_Radio extends Activity {
             new RadioGroup.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(RadioGroup group, int checkedId) {
+                    toneGenerator.startTone(ToneGenerator.TONE_PROP_BEEP);
                     clickCount++;
                     // Check if at least one option is selected in each group
                     boolean isGroup1Selected = energy.getCheckedRadioButtonId() != View.NO_ID;

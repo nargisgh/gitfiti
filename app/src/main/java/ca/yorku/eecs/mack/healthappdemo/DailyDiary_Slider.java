@@ -7,6 +7,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
+import android.media.AudioManager;
+import android.media.ToneGenerator;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,6 +29,7 @@ public class DailyDiary_Slider extends Activity {
     private static final String TIME_KEY = "time";
     private static final String CLICK_COUNT_KEY = "click_count";
     private DecimalFormat df = new DecimalFormat("#.##");
+    private ToneGenerator toneGenerator = new ToneGenerator(AudioManager.STREAM_ALARM, ToneGenerator.MAX_VOLUME);
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,6 +65,7 @@ public class DailyDiary_Slider extends Activity {
                 public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                     // Check if at least one SeekBar is not at position zero
                     clickCount++;
+                    toneGenerator.startTone(ToneGenerator.TONE_PROP_BEEP);
                     boolean isAnySeekBarNotAtZero = water.getProgress() > 0 && screenTime.getProgress() > 0
                             && sleep.getProgress() > 0 && energy.getProgress() > 0 && mindfulness.getProgress() > 0;
                     // Enable the "Next" button if SeekBar is not at position zero
