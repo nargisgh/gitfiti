@@ -1,7 +1,7 @@
-#Sun Nov 26 00:31:47 EST 2023
-base.0=/Users/nargisghiasi/4443/Demo_Android_Project/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/Users/nargisghiasi/4443/Demo_Android_Project/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/Users/nargisghiasi/4443/Demo_Android_Project/app/build/intermediates/dex/debug/mergeProjectDexDebug/4/classes.dex
+#Sun Nov 26 04:01:24 EST 2023
+base.0=C\:\\Users\\tarun\\StudioProjects\\Demo_Android_Project\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\tarun\\StudioProjects\\Demo_Android_Project\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\tarun\\StudioProjects\\Demo_Android_Project\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=4/classes.dex

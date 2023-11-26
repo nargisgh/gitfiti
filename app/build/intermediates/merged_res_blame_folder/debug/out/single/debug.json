@@ -1,202 +1,198 @@
 [
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_ic_progress.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable/ic_progress.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\drawable-mdpi_icon.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\drawable-mdpi\\icon.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\drawable_white_backgound.xml.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\drawable\\white_backgound.xml"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_tick_mark.xml.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable/tick_mark.xml"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\drawable_edit_text_background.xml.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\drawable\\edit_text_background.xml"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/mipmap-hdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/layout_dailydiary_slide_btn.xml.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/layout/dailydiary_slide_btn.xml"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/layout_dailydiary_radio_btn.xml.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/layout/dailydiary_radio_btn.xml"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\drawable_ic_menu_light.xml.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\drawable\\ic_menu_light.xml"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_ic_excercise_tip.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable/ic_excercise_tip.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_banner_background.xml.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable/banner_background.xml"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_exercise_item_background.xml.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable/exercise_item_background.xml"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\drawable_top_background.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\drawable\\top_background.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable-hdpi_icon.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable-hdpi/icon.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\drawable_ic_progress.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\drawable\\ic_progress.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\drawable_ic_instagram.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\drawable\\ic_instagram.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/layout_dailydiary_listview_btn.xml.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/layout/dailydiary_listview_btn.xml"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\layout_dailydiary_radio_btn.xml.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\layout\\dailydiary_radio_btn.xml"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_search_edit_background.xml.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable/search_edit_background.xml"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\drawable_ic_facebook.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\drawable\\ic_facebook.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/mipmap-xxhdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\drawable_ic_health.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\drawable\\ic_health.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/mipmap-hdpi/ic_launcher.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\drawable_ic_envelope.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\drawable\\ic_envelope.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_white_backgound.xml.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable/white_backgound.xml"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\layout_main.xml.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\layout\\main.xml"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/layout_results.xml.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/layout/results.xml"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\drawable_exercise_item_background.xml.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\drawable\\exercise_item_background.xml"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\layout_results.xml.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\layout\\results.xml"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\mipmap-hdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_ic_facebook.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable/ic_facebook.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\drawable_excercise_tip.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\drawable\\excercise_tip.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\drawable_search_edit_background.xml.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\drawable\\search_edit_background.xml"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/layout_custom_listview.xml.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/layout/custom_listview.xml"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\layout_recycler_view.xml.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\layout\\recycler_view.xml"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_excercise_tip.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable/excercise_tip.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\drawable-hdpi_icon.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\drawable-hdpi\\icon.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/layout_spinnerstyle.xml.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/layout/spinnerstyle.xml"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\drawable_banner_background.xml.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\drawable\\banner_background.xml"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable-ldpi_icon.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable-ldpi/icon.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\layout_dailydiary_listview_btn.xml.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\layout\\dailydiary_listview_btn.xml"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_edit_text_background.xml.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable/edit_text_background.xml"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\layout_custom_listview.xml.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\layout\\custom_listview.xml"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\drawable_ic_excercise_tip.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\drawable\\ic_excercise_tip.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_ic_health.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable/ic_health.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/layout_recycler_view.xml.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/layout/recycler_view.xml"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/mipmap-mdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\layout_item_exercise.xml.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\layout\\item_exercise.xml"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable-mdpi_icon.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable-mdpi/icon.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_ic_envelope.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable/ic_envelope.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\layout_spinnerstyle.xml.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\layout\\spinnerstyle.xml"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/mipmap-mdpi/ic_launcher.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\layout_dailydiary_slide_btn.xml.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\layout\\dailydiary_slide_btn.xml"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/layout_activity_wellness_goals.xml.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/layout/activity_wellness_goals.xml"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/mipmap-xhdpi/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\drawable_tick_mark.xml.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\drawable\\tick_mark.xml"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_ic_account.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable/ic_account.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\drawable-ldpi_icon.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\drawable-ldpi\\icon.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_button_background.xml.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable/button_background.xml"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\drawable_ic_account.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\drawable\\ic_account.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/layout_main.xml.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/layout/main.xml"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_top_background.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable/top_background.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\mipmap-mdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_ic_instagram.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable/ic_instagram.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\drawable_ic_exercise.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\drawable\\ic_exercise.png"
     },
     {
-        "merged": "ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/layout_dailydiary_listview_btn.xml.flat",
-        "source": "ca.yorku.eecs.mack.healthappdemo.app-main-22:/layout/dailydiary_listview_btn.xml"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_ic_menu_light.xml.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable/ic_menu_light.xml"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\layout_activity_wellness_goals.xml.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\layout\\activity_wellness_goals.xml"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/layout_item_exercise.xml.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/layout/item_exercise.xml"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\drawable_button_background.xml.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\drawable\\button_background.xml"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/drawable_ic_exercise.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/drawable/ic_exercise.png"
+        "merged": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\tarun\\.gradle\\daemon\\8.0\\ca.yorku.eecs.mack.healthappdemo.app-main-22:\\mipmap-xxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/mipmap-xhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/layout_dailydiary_spinner.xml.flat",
-        "source": "/Users/nargisghiasi/.gradle/daemon/8.0/ca.yorku.eecs.mack.healthappdemo.app-main-22:/layout/dailydiary_spinner.xml"
+        "merged": "ca.yorku.eecs.mack.healthappdemo.app-merged_res-20:/layout_activity_wellness_goals.xml.flat",
+        "source": "ca.yorku.eecs.mack.healthappdemo.app-main-22:/layout/activity_wellness_goals.xml"
     }
 ]
