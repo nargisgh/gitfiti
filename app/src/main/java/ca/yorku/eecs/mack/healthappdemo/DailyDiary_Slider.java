@@ -37,8 +37,12 @@ public class DailyDiary_Slider extends Activity {
         assert b != null;
         count = b.getInt("count");
         dayOfWeek = findViewById(R.id.paramLabelOrder);
-        dayOfWeek.setText(""+count+"/5");
-
+        if (count <= 5){
+            dayOfWeek.setText(""+count+"/5");
+        }
+        else{
+            dayOfWeek.setText(" ");
+        }
         //check if selected
         water = findViewById(R.id.sliderSeekBar);
         screenTime = findViewById(R.id.sliderSeekBar2);

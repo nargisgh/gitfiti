@@ -38,7 +38,12 @@ public class DailyDiary_Radio extends Activity {
         Log.i(MYDEBUG, "Radio.");
         counter = getCounter();
         dayOfWeek = findViewById(R.id.paramLabelOrder);
-        dayOfWeek.setText(String.format("%d/5", counter));
+        if (counter <= 5){
+            dayOfWeek.setText(""+counter+"/5");
+        }
+        else{
+            dayOfWeek.setText(" ");
+        }
         //get the day of the week from home screen and set textview with it
         //get the trial count and use that to save the results of time spent
         //check if selected

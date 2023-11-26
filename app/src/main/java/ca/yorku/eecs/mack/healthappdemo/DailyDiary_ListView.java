@@ -49,7 +49,7 @@ public class DailyDiary_ListView extends HealthAppDemo {
 
         list1 = findViewById(R.id.moodList);
         ArrayAdapter<String> moods;
-        moods = new ArrayAdapter<String>(DailyDiary_ListView.this, R.layout.custom_listview, moodsList);
+        moods = new ArrayAdapter<>(DailyDiary_ListView.this, R.layout.custom_listview, moodsList);
         list1.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
         list1.setAdapter(moods);
         list1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -63,7 +63,7 @@ public class DailyDiary_ListView extends HealthAppDemo {
 
         list2 = findViewById(R.id.mindList);
         ArrayAdapter<String> minds;
-        minds = new ArrayAdapter<String>(DailyDiary_ListView.this, R.layout.custom_listview, mindsList);
+        minds = new ArrayAdapter<>(DailyDiary_ListView.this, R.layout.custom_listview, mindsList);
         list2.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
         list2.setAdapter(minds);
         list2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -77,7 +77,7 @@ public class DailyDiary_ListView extends HealthAppDemo {
 
         list3 = findViewById(R.id.excerciseList);
         ArrayAdapter<String> excercises;
-        excercises = new ArrayAdapter<String>(DailyDiary_ListView.this, R.layout.custom_listview, excercisesList);
+        excercises = new ArrayAdapter<>(DailyDiary_ListView.this, R.layout.custom_listview, excercisesList);
         list3.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
         list3.setAdapter(excercises);
         list3.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -90,7 +90,12 @@ public class DailyDiary_ListView extends HealthAppDemo {
         });
 
         initialize();
-        day.setText("Day of the Week Log:                    "+counter+"/5");
+        if (counter <= 5){
+            day.setText("Day of the Week Log:                    "+counter+"/5");
+        }
+        else{
+            day.setText(" ");
+        }
         Log.i(MYDEBUG, "Initialization done. Application running.");
 
     }
