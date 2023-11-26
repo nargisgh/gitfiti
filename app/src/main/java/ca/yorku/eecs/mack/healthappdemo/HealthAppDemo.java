@@ -1,8 +1,6 @@
 package ca.yorku.eecs.mack.healthappdemo;// MainActivity.java
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.media.AudioManager;
 import android.media.ToneGenerator;
@@ -66,6 +64,17 @@ public class HealthAppDemo extends AppCompatActivity {
         }*/
         toneGenerator.startTone(ToneGenerator.TONE_PROP_BEEP);
         Intent intent = new Intent(this, DailyDiary_Radio.class);
+        startActivity(intent);
+    }
+
+    public void onWellnessGoalsClick(View view){
+        /*SharedPreferences prefs = getSharedPreferences(PREFS, Context.MODE_PRIVATE);
+        int counter = prefs.getInt("counter", 1);
+        if (counter > 5){
+            //show normal questionnaire, no more trials
+        }*/
+        toneGenerator.startTone(ToneGenerator.TONE_PROP_BEEP);
+        Intent intent = new Intent(this, WellnessGoalsActivity.class);
         startActivity(intent);
     }
 }

@@ -84,4 +84,16 @@
     <string name="today_goal">Today\'s Goal</string>
     <string name="hello">Hello</string>
     <string name="everyone">Everyone!</string>
+    <string name="create_wellness_goals">Create Wellness Goals</string>
+    <string name="wellness_activity_label" />
+    <string name="plus">+</string>
+    <string name="save_goals">Save Goals</string>
+    <string name="mindset">Mindset</string>
+    <string name="overall_mood">Overall Mood</string>
+
+
+    <item name="goalsLayout" type="id" />
+    <item name="buttonAddGoal" type="id" />
+    <item name="buttonSaveGoals" type="id" />
+    <item name="textViewHeader" type="id" />
 </resources>

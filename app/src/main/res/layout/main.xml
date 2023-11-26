@@ -171,6 +171,7 @@
                         android:layout_height="98dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
+                        android:onClick="onWellnessGoalsClick"
                         android:background="@drawable/button_background"
                         android:contentDescription="@string/wellness_goals"
                         android:scaleType="fitCenter"

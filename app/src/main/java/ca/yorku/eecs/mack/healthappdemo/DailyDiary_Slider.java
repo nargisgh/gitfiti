@@ -1,7 +1,5 @@
 package ca.yorku.eecs.mack.healthappdemo;
 
-import static ca.yorku.eecs.mack.healthappdemo.HealthAppDemo.PREFS;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -82,15 +80,11 @@ public class DailyDiary_Slider extends Activity {
             };
     public void onNextButtonClick(View view) {
         saveData();
-        saveCounter();
         Intent intent;
-        if(count ==2){
-            intent = new Intent(this, Results.class);
-        }
-        else{
-            // TODO update to the correct activity
-            intent = new Intent(this, HealthAppDemo.class);
-        }
+        Bundle b = new Bundle();
+        intent = new Intent(this, DailyDiary_ListView.class);
+        b.putInt("count", count);
+        intent.putExtras(b);
         startActivity(intent);
     }
 
@@ -103,16 +97,6 @@ public class DailyDiary_Slider extends Activity {
         editor.putString(TIME_KEY+count, time);
         editor.apply();
         editor.putInt(CLICK_COUNT_KEY+count, clickCount);
-        editor.apply();
-    }
-
-    private void saveCounter() {
-        SharedPreferences prefs = getSharedPreferences(PREFS, Context.MODE_PRIVATE);
-        // Update the counter in SharedPreferences
-        SharedPreferences.Editor editor = prefs.edit();
-        int newcount = count;
-        newcount++;
-        editor.putInt("counter", newcount);
         editor.apply();
     }
 }

@@ -1,0 +1,9 @@
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText">
+    <solid android:color="#FFFFFF" /> <!-- Set the background color as needed -->
+    <corners android:radius="8dp" /> <!-- Adjust the corner radius as needed -->
+    <stroke
+        android:color="#CCCCCC"
+        android:width="2dp" />
+</shape>
