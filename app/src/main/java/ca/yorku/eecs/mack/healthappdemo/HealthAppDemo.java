@@ -1,67 +1,80 @@
-package ca.yorku.eecs.mack.healthappdemo;
+package ca.yorku.eecs.mack.healthappdemo;// MainActivity.java
 
-import android.app.Activity;
+import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.media.AudioManager;
+import android.media.ToneGenerator;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 import java.util.Locale;
-import ca.yorku.eecs.mack.demoandroid.R;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 
-public class HealthAppDemo extends Activity implements OnClickListener {
-    private final static String MYDEBUG = "MYDEBUG"; // for Log.i messages
-
-    private Button incrementButton, decrementButton, exitButton;
-    private TextView textview;
-    private int clickCount;
-
-    // called when the activity is first created
+public class HealthAppDemo extends AppCompatActivity {
+    public static final String PREFS = "MyPrefsFile"; // File to store the counter
+    private ToneGenerator toneGenerator = new ToneGenerator(AudioManager.STREAM_ALARM, ToneGenerator.MAX_VOLUME);
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        initialize();
-        Log.i(MYDEBUG, "Initialization done. Application running.");
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        // Get the TextView reference
+        TextView todayDateTextView = findViewById(R.id.todayDateTextView);
+
+        // Get today's date
+        String todayDate = getCurrentDate();
+
+        // Set the text of todayDateTextView to display today's date
+        todayDateTextView.setText(todayDate);
+
+        RecyclerView recyclerView = findViewById(R.id.recyclerViewExercises);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        // Create a list of exercises (replace this with your actual data)
+        List<String> exerciseList = new ArrayList<>();
+        exerciseList.add("• Mix it up: Combine cardio and strength training for a well-rounded fitness routine.");
+        exerciseList.add("• Flexibility matters: Include yoga or Pilates for improved mobility.");
+        exerciseList.add("• Consistency beats intensity: Regular, moderate exercise is key.");
+        exerciseList.add("• Function over form: Prioritize exercises that mimic daily movements.");
+        exerciseList.add("• Listen to your body: Adjust workouts based on how you feel.");
+        // Add more exercises as needed
+
+        // Create and set the adapter
+        ExerciseAdapter exerciseAdapter = new ExerciseAdapter(this, exerciseList);
+        recyclerView.setAdapter(exerciseAdapter);
     }
 
-    private void initialize() {
-        // get references to buttons and text view from the layout manager (rather than instantiate them)
-        incrementButton = (Button) findViewById(R.id.incbutton);
-        decrementButton = (Button) findViewById(R.id.decbutton);
-        exitButton = (Button) findViewById(R.id.exitbutton);
-        textview = (TextView) findViewById(R.id.textview);
-
-        // some code is missing here
-
-        // initialize the click count
-        clickCount = 0;
-
-        // initialize the text field with the click count
-        textview.setText(String.format(Locale.CANADA, "Count: %d", clickCount));
+    // Helper method to get today's date
+    private String getCurrentDate() {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
+        return dateFormat.format(new Date());
+    }
+    public void onDailyDiaryButtonClick(View view){
+        /*SharedPreferences prefs = getSharedPreferences(PREFS, Context.MODE_PRIVATE);
+        int counter = prefs.getInt("counter", 1);
+        if (counter > 5){
+            //show normal questionnaire, no more trials
+        }*/
+        toneGenerator.startTone(ToneGenerator.TONE_PROP_BEEP);
+        Intent intent = new Intent(this, DailyDiary_Radio.class);
+        startActivity(intent);
     }
 
-    // this code executes when a button is clicked (i.e., tapped with user's finger)
-    @Override
-    public void onClick(View v) {
-        if (v == incrementButton) {
-            Log.i(MYDEBUG, "Increment button clicked!");
-            ++clickCount;
-
-        } else if (v == decrementButton) {
-            Log.i(MYDEBUG, "Decrement button clicked!");
-            --clickCount;
-
-        } else if (v == exitButton) {
-            Log.i(MYDEBUG, "Good bye!");
-            this.finish();
-
-        } else
-            Log.i(MYDEBUG, "Oops: Invalid Click Event!");
-
-        // update click count
-        textview.setText(String.format(Locale.CANADA, "Count: %d", clickCount));
+    public void onWellnessGoalsClick(View view){
+        /*SharedPreferences prefs = getSharedPreferences(PREFS, Context.MODE_PRIVATE);
+        int counter = prefs.getInt("counter", 1);
+        if (counter > 5){
+            //show normal questionnaire, no more trials
+        }*/
+        toneGenerator.startTone(ToneGenerator.TONE_PROP_BEEP);
+        Intent intent = new Intent(this, WellnessGoalsActivity.class);
+        startActivity(intent);
     }
 }

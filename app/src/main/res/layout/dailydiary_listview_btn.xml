@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff123456"
+    android:theme="@android:style/Theme.Holo"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dailyLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="@string/daily_diary_title"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dailyLog"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="3dp"
+        android:text="Day of the Week Log:                    /5"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/day"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="2dp"
+        android:text="Input Type:                              ListView"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/mood"
+        android:layout_width="469dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/overall_mood"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/moodList"
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:layout_below="@+id/mood"
+        android:layout_marginTop="4dp"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/mind"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_below="@+id/moodList"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:text="@string/mindset"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/mindList"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_below="@+id/mind"
+        android:layout_marginTop="15dp"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/excercise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mindList"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/type_of_exercise"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/excerciseList"
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:layout_below="@+id/excercise"
+        android:layout_marginTop="12dp"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/excerciseList"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginRight="175dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="onNextClick"
+        android:text="@string/next" />
+
+</RelativeLayout>

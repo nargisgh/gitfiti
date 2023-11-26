@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff123456"
+    android:theme="@android:style/Theme.Holo"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#ff123456"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/setupTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff234567"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp"
+            android:text="@string/results"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="567dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="567dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/questionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/day_of_the_week_1_5"
+                android:paddingTop="16dp"
+                android:textSize="18sp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="248dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/input_type"
+                        android:background="#677AE6"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="154dp"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/radio_button"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/time"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/timer1"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__seconds"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/clickr1"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__ clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/input_type"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="154dp"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/slider"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/time"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/times1"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__seconds"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/clicks1"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__ clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/input_type"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="154dp"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/spinner_list"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/time"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/timesp1"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__seconds"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/clicksp1"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__ clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/day2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/day_of_the_week_2_5"
+                android:textSize="18sp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="248dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/input_type"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="154dp"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/radio_button"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/time"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/timer2"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__seconds"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/clickr2"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__ clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/input_type"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="154dp"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/slider"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/time"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/times2"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__seconds"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/clicks2"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__ clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/input_type"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="154dp"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/spinner_list"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/time"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/timesp2"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__seconds"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/clicksp2"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__ clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/day3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/day_of_the_week_3_5"
+                android:textSize="18sp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="248dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/input_type"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="154dp"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/radio_button"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/time"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/timer3"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__seconds"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/clickr3"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__ clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/input_type"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="154dp"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/slider"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/time"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/time_s3"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__seconds"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/clicks3"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__ clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/input_type"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="154dp"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/spinner_list"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/time"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/timesp3"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__seconds"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/clicksp3"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__ clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/day4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/day_of_the_week_4_5"
+                android:textSize="18sp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="248dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/input_type"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="154dp"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/radio_button"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/time"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/timer4"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__seconds"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/clickr4"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__ clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/input_type"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="154dp"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/slider"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/time"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/times4"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__seconds"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/clicks4"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__ clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/input_type"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="154dp"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/spinner_list"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/time"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/timesp4"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__seconds"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/clicksp4"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__ clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/day5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/day_of_the_week_5_5"
+                android:textSize="18sp" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="248dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/input_type"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="154dp"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/radio_button"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/time"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/timer5"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__seconds"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/clickr5"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__ clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/input_type"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="154dp"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/slider"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/time"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/times5"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__seconds"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/clicks5"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__ clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/input_type"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_width="154dp"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:background="#677AE6"
+                        android:text="@string/spinner_list"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/time"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/timesp5"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__seconds"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:gravity="left"
+                        android:paddingRight="5dp"
+                        android:text="@string/clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/clicksp5"
+                        android:gravity="center"
+                        android:paddingRight="5dp"
+                        android:text="__ clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:layout_width="128dp"
+        android:layout_height="45dp"
+        android:id="@+id/home"
+        android:onClick="onHomeButtonClick"
+        android:layout_marginTop="12dp"
+        android:text="@string/home">
+    </Button>
+</LinearLayout>

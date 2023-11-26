@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff123456"
+    android:theme="@android:style/Theme.Holo"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="403dp"
+        android:layout_height="669dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#ff123456"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/setupTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff234567"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp"
+            android:text="@string/daily_diary_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/paramLabel"
+                    android:gravity="left"
+                    android:paddingRight="5dp"
+                    android:text="@string/day_of_the_week_log"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/paramLabelOrder"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="/5"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/paramLabelGain"
+                    android:gravity="left"
+                    android:paddingRight="5dp"
+                    android:text="@string/input_type"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/paramLabelOrderOfControl"
+                    android:layout_width="154dp"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="@string/radio_button"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+        </TableLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="534dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="580dp"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Question TextView -->
+                <TextView
+                    android:id="@+id/questionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/energy_level"
+                    android:textSize="18sp" />
+
+                <!-- RadioGroup for RadioButtons -->
+                <RadioGroup
+                    android:id="@+id/optionsRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- RadioButton 1 -->
+                    <RadioButton
+                        android:id="@+id/option1e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/exhausted" />
+
+                    <!-- RadioButton 2 -->
+                    <RadioButton
+                        android:id="@+id/option2e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tired" />
+
+                    <!-- RadioButton 3 -->
+                    <RadioButton
+                        android:id="@+id/option3e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/okay" />
+
+                    <RadioButton
+                        android:id="@+id/option4e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/energetic" />
+
+                    <RadioButton
+                        android:id="@+id/option5e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fully_energized" />
+
+                </RadioGroup>
+
+                <!-- Question TextView -->
+                <TextView
+                    android:id="@+id/questionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/hours_of_sleep"
+                    android:textSize="18sp" />
+
+                <!-- RadioGroup for RadioButtons -->
+                <RadioGroup
+                    android:id="@+id/options"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- RadioButton 1 -->
+                    <RadioButton
+                        android:id="@+id/option1s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_1_3_hours" />
+
+                    <!-- RadioButton 2 -->
+                    <RadioButton
+                        android:id="@+id/option2s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_4_6_hours" />
+
+                    <!-- RadioButton 3 -->
+                    <RadioButton
+                        android:id="@+id/option3s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_7_8_hours" />
+
+                    <RadioButton
+                        android:id="@+id/option4s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_8_hours" />
+
+                </RadioGroup>
+                <!-- Question TextView -->
+                <TextView
+                    android:id="@+id/questionTextS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/stress_levels_throughout_the_day"
+                    android:textSize="18sp" />
+
+                <!-- RadioGroup for RadioButtons -->
+                <RadioGroup
+                    android:id="@+id/optionsst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- RadioButton 1 -->
+                    <RadioButton
+                        android:id="@+id/option1st"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_1_2_intensity" />
+
+                    <!-- RadioButton 2 -->
+                    <RadioButton
+                        android:id="@+id/option2st"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_3_5_intensity" />
+
+                    <!-- RadioButton 3 -->
+                    <RadioButton
+                        android:id="@+id/option3st"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_6_8_intensity" />
+
+                    <RadioButton
+                        android:id="@+id/option4st"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_9_10_intensity" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/questionTexte"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/type_of_exercise"
+                    android:textSize="18sp" />
+
+                <!-- RadioGroup for RadioButtons -->
+                <RadioGroup
+                    android:id="@+id/optionse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- RadioButton 1 -->
+                    <RadioButton
+                        android:id="@+id/option1ex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/walking" />
+
+                    <!-- RadioButton 2 -->
+                    <RadioButton
+                        android:id="@+id/option2ex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/running" />
+
+                    <!-- RadioButton 3 -->
+                    <RadioButton
+                        android:id="@+id/option3ex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yoga" />
+
+                    <RadioButton
+                        android:id="@+id/option4ex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gym_workout" />
+
+                    <RadioButton
+                        android:id="@+id/option5ex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sports_activity" />
+
+                    <RadioButton
+                        android:id="@+id/option6ex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/other" />
+
+                </RadioGroup>
+                <TextView
+                    android:id="@+id/questionTextN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/nutrition_meals"
+                    android:textSize="18sp" />
+
+                <!-- RadioGroup for RadioButtons -->
+                <RadioGroup
+                    android:id="@+id/optionsn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- RadioButton 1 -->
+                    <RadioButton
+                        android:id="@+id/option1n"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_3_meals_a_day" />
+
+                    <!-- RadioButton 2 -->
+                    <RadioButton
+                        android:id="@+id/option2n"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/snacks" />
+
+                    <!-- RadioButton 3 -->
+                    <RadioButton
+                        android:id="@+id/option3n"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/inconsistent_eating_habits" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="128dp"
+        android:layout_height="45dp"
+        android:id="@+id/next"
+        android:layout_marginTop="12dp"
+        android:onClick="onNextButtonClick"
+        android:enabled="false"
+        android:text="@string/next">
+    </Button>
+</LinearLayout>
