@@ -1,60 +1,100 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textViewHeader"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/create_wellness_goals"
-        android:textSize="20sp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="16dp"
-        android:clickable="true"
-        android:background="?android:attr/selectableItemBackground"/>
-
-    <ScrollView
+    <ImageView
+        android:id="@+id/imageView5"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-
-        <LinearLayout
-            android:id="@+id/goalsLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <!-- Goals will be dynamically added here -->
-        </LinearLayout>
-
-    </ScrollView>
+        android:layout_height="match_parent"
+        android:src="@drawable/top_background"
+        android:scaleType="centerCrop" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <Button
-            android:id="@+id/buttonAddGoal"
+        <!-- Battery status text at the top -->
+        <TextView
+            android:id="@+id/batteryStatusTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/plus"
-            android:textSize="24sp"
-            android:layout_gravity="end"
-            android:layout_marginTop="16dp"
-            />
-
-        <Button
-            android:id="@+id/buttonSaveGoals"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/save_goals"
+            android:text=""
+            android:textColor="#FFFFFF"
             android:textSize="18sp"
-            android:layout_gravity="start"
-            android:layout_marginTop="16dp"
-            android:visibility="visible"/> <!-- Set visibility to "visible" as the button is initially visible -->
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textViewHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_wellness_goals"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/goalsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- Goals will be dynamically added here -->
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonAddGoal"
+                android:layout_width="wrap_content"
+                android:layout_height="109dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:text="@string/plus"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonSaveGoals"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_gravity="start"
+                android:layout_marginTop="16dp"
+                android:text="@string/save_goals"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/buttonReset"
+                android:layout_width="211dp"
+                android:layout_height="111dp"
+                android:layout_gravity="start"
+                android:layout_marginTop="16dp"
+                android:text="Reset"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>

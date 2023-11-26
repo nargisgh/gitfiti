@@ -2,23 +2,35 @@ package ca.yorku.eecs.mack.healthappdemo;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.Typeface;
+import android.os.BatteryManager;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
 public class WellnessGoalsActivity extends Activity {
 
-    private static final int SPEECH_REQUEST_CODE = 123;
+    private static final String PREF_NAME = "WellnessGoalsPref";
+    private static final String GOALS_KEY = "Goals";
 
     private LinearLayout goalsLayout;
     private Button buttonAddGoal;
     private Button buttonSaveGoals;
+    private Button buttonReset;
+    private TextView batteryStatusTextView;
 
     private boolean isFirstGoalCreated = false;
 
@@ -30,6 +42,8 @@ public class WellnessGoalsActivity extends Activity {
         goalsLayout = findViewById(R.id.goalsLayout);
         buttonAddGoal = findViewById(R.id.buttonAddGoal);
         buttonSaveGoals = findViewById(R.id.buttonSaveGoals);
+        buttonReset = findViewById(R.id.buttonReset);
+        batteryStatusTextView = findViewById(R.id.batteryStatusTextView);
 
         TextView textViewHeader = findViewById(R.id.textViewHeader);
         textViewHeader.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +62,8 @@ public class WellnessGoalsActivity extends Activity {
             buttonSaveGoals.setVisibility(View.VISIBLE); // Show the "Save Goals" button
         }
 
+        loadSavedGoals();
+
         buttonAddGoal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -61,6 +77,113 @@ public class WellnessGoalsActivity extends Activity {
                 saveGoals();
             }
         });
+
+        buttonReset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resetGoals();
+            }
+        });
+
+        // Register a BroadcastReceiver to listen for battery changes
+        registerBatteryReceiver();
+    }
+
+    private void registerBatteryReceiver() {
+        // Register a BroadcastReceiver to receive battery updates
+        IntentFilter intentFilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
+        registerReceiver(batteryReceiver, intentFilter);
+    }
+
+    private BroadcastReceiver batteryReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            int level = intent.getIntExtra(BatteryManager.EXTRA_LEVEL, -1);
+            int scale = intent.getIntExtra(BatteryManager.EXTRA_SCALE, -1);
+
+            // Calculate battery percentage
+            float batteryPercentage = (level / (float) scale) * 100;
+
+            // Update the battery status TextView
+            updateBatteryStatus(batteryPercentage);
+        }
+    };
+
+    private void updateBatteryStatus(float batteryPercentage) {
+        // Update the battery status TextView with the battery percentage
+        String batteryStatus = "Battery Status: " + batteryPercentage + "%";
+        batteryStatusTextView.setText(batteryStatus);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        // Unregister the battery receiver when the activity is destroyed
+        unregisterReceiver(batteryReceiver);
+    }
+
+    private void saveGoals() {
+        int goalCount = goalsLayout.getChildCount();
+        if (goalCount > 0) {
+            StringBuilder goalsStringBuilder = new StringBuilder();
+
+            // Iterate through the goals and append them to the StringBuilder
+            for (int i = 0; i < goalCount; i++) {
+                View childView = goalsLayout.getChildAt(i);
+                if (childView instanceof TextView) {
+                    String goalText = ((TextView) childView).getText().toString();
+                    goalsStringBuilder.append(goalText);
+
+                    // Add a newline character to separate each goal
+                    goalsStringBuilder.append("\n");
+                }
+            }
+
+            // Save goals using SharedPreferences
+            SharedPreferences sharedPreferences = getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putString(GOALS_KEY, goalsStringBuilder.toString());
+            editor.apply();
+
+            // Show the "Save Goals" dialog in the middle of the screen
+            showSaveGoalsDialog(goalsStringBuilder.toString());
+        } else {
+            Toast.makeText(this, "No goals to save", Toast.LENGTH_SHORT).show();
+
+            // If there are no goals, hide the "Save Goals" button
+            buttonSaveGoals.setVisibility(View.GONE);
+        }
+    }
+
+    private void loadSavedGoals() {
+        SharedPreferences sharedPreferences = getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
+        String savedGoals = sharedPreferences.getString(GOALS_KEY, "");
+
+        // Clear the current goals before adding the saved ones
+        goalsLayout.removeAllViews();
+
+        if (!savedGoals.isEmpty()) {
+            // Split the saved goals by newline character
+            String[] goalsArray = savedGoals.split("\n");
+
+            // Display each saved goal
+            for (String goal : goalsArray) {
+                addGoal(goal);
+            }
+
+            // Update button visibility accordingly
+            buttonSaveGoals.setVisibility(View.VISIBLE);
+        } else {
+            // If there are no saved goals, show the central "+" button
+            buttonSaveGoals.setVisibility(View.GONE); // Hide the "Save Goals" button
+        }
+
+        // Always show the "+" button
+        buttonAddGoal.setVisibility(View.VISIBLE);
+
+        TextView textViewHeader = findViewById(R.id.textViewHeader);
+        textViewHeader.setText("Create Wellness Goals");
+        isFirstGoalCreated = false;
     }
 
     private void startCreatingGoal() {
@@ -102,6 +225,11 @@ public class WellnessGoalsActivity extends Activity {
         goalTextView.setText(goalText);
         goalTextView.setTextSize(18);
 
+        // Set text color, style, and size
+        goalTextView.setTextColor(Color.WHITE);
+        goalTextView.setTypeface(null, Typeface.BOLD);
+        goalTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 25);
+
         // Add a click listener for editing/deleting the goal
         goalTextView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -115,7 +243,7 @@ public class WellnessGoalsActivity extends Activity {
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT
         );
-        layoutParams.setMargins(0, 0, 0, dpToPx(16)); // 16dp bottom margin
+        layoutParams.setMargins(0, 0, 0, dpToPx(1)); // 1dp bottom margin
 
         // Add the TextView to the goalsLayout
         goalsLayout.addView(goalTextView, layoutParams);
@@ -133,6 +261,18 @@ public class WellnessGoalsActivity extends Activity {
         // Check if goals are created, and update "Save Goals" button visibility accordingly
         if (goalsLayout.getChildCount() == 1) {
             buttonSaveGoals.setVisibility(View.GONE); // Hide the "Save Goals" button
+        }
+        updateTodayGoalsTextView();
+    }
+
+    private void updateTodayGoalsTextView() {
+        // Find the TextView with the id textView4
+        TextView todayGoalsTextView = findViewById(R.id.textView4);
+
+        // Check if the TextView exists
+        if (todayGoalsTextView != null) {
+            // Update the text of the TextView with the goals header
+            todayGoalsTextView.setText("Today's Goals:");
         }
     }
 
@@ -223,30 +363,6 @@ public class WellnessGoalsActivity extends Activity {
         builder.show();
     }
 
-    private void saveGoals() {
-        int goalCount = goalsLayout.getChildCount();
-        if (goalCount > 0) {
-            StringBuilder goalsStringBuilder = new StringBuilder();
-
-            // Iterate through the goals and append them to the StringBuilder
-            for (int i = 0; i < goalCount; i++) {
-                View childView = goalsLayout.getChildAt(i);
-                if (childView instanceof TextView) {
-                    String goalText = ((TextView) childView).getText().toString();
-                    goalsStringBuilder.append(goalText);
-
-                    // Add a newline character to separate each goal
-                    goalsStringBuilder.append("\n");
-                }
-            }
-
-            // Show the "Save Goals" dialog in the middle of the screen
-            showSaveGoalsDialog(goalsStringBuilder.toString());
-        } else {
-            Toast.makeText(this, "No goals to save", Toast.LENGTH_SHORT).show();
-        }
-    }
-
     private void showSaveGoalsDialog(String goalsText) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Save Goals");
@@ -266,6 +382,28 @@ public class WellnessGoalsActivity extends Activity {
 
         AlertDialog dialog = builder.create();
         dialog.show();
+    }
+
+    private void resetGoals() {
+        // Clear all goals
+        goalsLayout.removeAllViews();
+
+        // Reset header and button visibility
+        TextView textViewHeader = findViewById(R.id.textViewHeader);
+        textViewHeader.setText("Create Wellness Goals");
+        isFirstGoalCreated = false;
+
+        buttonAddGoal.setVisibility(View.VISIBLE);
+        buttonSaveGoals.setVisibility(View.GONE);
+
+        // Clear saved goals from SharedPreferences
+        SharedPreferences sharedPreferences = getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.remove(GOALS_KEY);
+        editor.apply();
+
+        // Inform the user that wellness goals have been reset
+        Toast.makeText(this, "Wellness goals reset", Toast.LENGTH_SHORT).show();
     }
 
     private int dpToPx(int dp) {
